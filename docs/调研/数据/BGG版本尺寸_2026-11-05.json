@@ -1,0 +1,511 @@
+{
+  "source": "https://api.geekdo.com/api/geekitem/linkeditems?linkdata_index=boardgameversion&objecttype=thing&objectid=342942&pageid=1&showcount=100",
+  "date": "2026-11-05",
+  "records": [
+    {
+      "version_id": "789012",
+      "name": "English 2.1 edition",
+      "url": "https://boardgamegeek.com/boardgameversion/789012/english-21-edition",
+      "inches": {
+        "length": "11.75",
+        "width": "14.25",
+        "depth": "3"
+      },
+      "publishers": [
+        "Capstone Games",
+        "Feuerland Spiele"
+      ]
+    },
+    {
+      "version_id": "770649",
+      "name": "English edition 2024",
+      "url": "https://boardgamegeek.com/boardgameversion/770649/english-edition-2024",
+      "inches": {
+        "length": "14.57",
+        "width": "11.81",
+        "depth": "2.76"
+      },
+      "publishers": [
+        "Capstone Games",
+        "Feuerland Spiele"
+      ]
+    },
+    {
+      "version_id": "775030",
+      "name": "German edition, eigth printing",
+      "url": "https://boardgamegeek.com/boardgameversion/775030/german-edition-eigth-printing",
+      "inches": {
+        "length": "14.3701",
+        "width": "11.811",
+        "depth": "2.83465"
+      },
+      "publishers": [
+        "Feuerland Spiele"
+      ]
+    },
+    {
+      "version_id": "740534",
+      "name": "English edition 2023",
+      "url": "https://boardgamegeek.com/boardgameversion/740534/english-edition-2023",
+      "inches": {
+        "length": "14.5669",
+        "width": "11.811",
+        "depth": "2.75591"
+      },
+      "publishers": [
+        "Capstone Games",
+        "Feuerland Spiele"
+      ]
+    },
+    {
+      "version_id": "756566",
+      "name": "German edition, seventh printing",
+      "url": "https://boardgamegeek.com/boardgameversion/756566/german-edition-seventh-printing",
+      "inches": {
+        "length": "14.3701",
+        "width": "11.811",
+        "depth": "2.75591"
+      },
+      "publishers": [
+        "Feuerland Spiele"
+      ]
+    },
+    {
+      "version_id": "768047",
+      "name": "Hungarian second edition",
+      "url": "https://boardgamegeek.com/boardgameversion/768047/hungarian-second-edition",
+      "inches": {
+        "length": "14.3701",
+        "width": "11.811",
+        "depth": "2.83465"
+      },
+      "publishers": [
+        "Gémklub"
+      ]
+    },
+    {
+      "version_id": "652910",
+      "name": "Portuguese edition",
+      "url": "https://boardgamegeek.com/boardgameversion/652910/portuguese-edition",
+      "inches": {
+        "length": "0",
+        "width": "0",
+        "depth": "0"
+      },
+      "publishers": [
+        "Grok Games",
+        "Ludofy Creative"
+      ]
+    },
+    {
+      "version_id": "690178",
+      "name": "Serbian edition",
+      "url": "https://boardgamegeek.com/boardgameversion/690178/serbian-edition",
+      "inches": {
+        "length": "14.5669",
+        "width": "11.811",
+        "depth": "2.75591"
+      },
+      "publishers": [
+        "Feuerland Spiele",
+        "MIPL"
+      ]
+    },
+    {
+      "version_id": "649679",
+      "name": "Thai edition",
+      "url": "https://boardgamegeek.com/boardgameversion/649679/thai-edition",
+      "inches": {
+        "length": "11.811",
+        "width": "14.3701",
+        "depth": "2.87402"
+      },
+      "publishers": [
+        "CMON Global Limited",
+        "Feuerland Spiele",
+        "Tower Tactic Games"
+      ]
+    },
+    {
+      "version_id": "644052",
+      "name": "Ukrainian edition",
+      "url": "https://boardgamegeek.com/boardgameversion/644052/ukrainian-edition",
+      "inches": {
+        "length": "0",
+        "width": "0",
+        "depth": "0"
+      },
+      "publishers": [
+        "Feuerland Spiele",
+        "IGAMES"
+      ]
+    },
+    {
+      "version_id": "623699",
+      "name": "Czech edition",
+      "url": "https://boardgamegeek.com/boardgameversion/623699/czech-edition",
+      "inches": {
+        "length": "14.3701",
+        "width": "11.811",
+        "depth": "2.87402"
+      },
+      "publishers": [
+        "Feuerland Spiele",
+        "MINDOK"
+      ]
+    },
+    {
+      "version_id": "584007",
+      "name": "Dutch edition",
+      "url": "https://boardgamegeek.com/boardgameversion/584007/dutch-edition",
+      "inches": {
+        "length": "14.5669",
+        "width": "11.811",
+        "depth": "2.75591"
+      },
+      "publishers": [
+        "White Goblin Games"
+      ]
+    },
+    {
+      "version_id": "638107",
+      "name": "English edition, fifth printing",
+      "url": "https://boardgamegeek.com/boardgameversion/638107/english-edition-fifth-printing",
+      "inches": {
+        "length": "14.57",
+        "width": "11.81",
+        "depth": "2.76"
+      },
+      "publishers": [
+        "Capstone Games",
+        "Feuerland Spiele"
+      ]
+    },
+    {
+      "version_id": "571944",
+      "name": "English edition, first printing",
+      "url": "https://boardgamegeek.com/boardgameversion/571944/english-edition-first-printing",
+      "inches": {
+        "length": "14.5669",
+        "width": "11.811",
+        "depth": "2.75591"
+      },
+      "publishers": [
+        "Capstone Games",
+        "Feuerland Spiele"
+      ]
+    },
+    {
+      "version_id": "633383",
+      "name": "English edition, fourth printing",
+      "url": "https://boardgamegeek.com/boardgameversion/633383/english-edition-fourth-printing",
+      "inches": {
+        "length": "14.57",
+        "width": "11.81",
+        "depth": "2.76"
+      },
+      "publishers": [
+        "Capstone Games",
+        "Feuerland Spiele"
+      ]
+    },
+    {
+      "version_id": "615223",
+      "name": "English edition, second printing",
+      "url": "https://boardgamegeek.com/boardgameversion/615223/english-edition-second-printing",
+      "inches": {
+        "length": "14.57",
+        "width": "11.81",
+        "depth": "2.76"
+      },
+      "publishers": [
+        "Capstone Games",
+        "Feuerland Spiele"
+      ]
+    },
+    {
+      "version_id": "684630",
+      "name": "English edition, seventh printing",
+      "url": "https://boardgamegeek.com/boardgameversion/684630/english-edition-seventh-printing",
+      "inches": {
+        "length": "14.57",
+        "width": "11.81",
+        "depth": "2.76"
+      },
+      "publishers": [
+        "Capstone Games",
+        "Feuerland Spiele"
+      ]
+    },
+    {
+      "version_id": "653093",
+      "name": "English edition, sixth printing",
+      "url": "https://boardgamegeek.com/boardgameversion/653093/english-edition-sixth-printing",
+      "inches": {
+        "length": "14.57",
+        "width": "11.81",
+        "depth": "2.76"
+      },
+      "publishers": [
+        "Capstone Games",
+        "Feuerland Spiele"
+      ]
+    },
+    {
+      "version_id": "615224",
+      "name": "English edition, third printing",
+      "url": "https://boardgamegeek.com/boardgameversion/615224/english-edition-third-printing",
+      "inches": {
+        "length": "0",
+        "width": "0",
+        "depth": "0"
+      },
+      "publishers": [
+        "Capstone Games",
+        "Feuerland Spiele"
+      ]
+    },
+    {
+      "version_id": "620296",
+      "name": "Finnish edition",
+      "url": "https://boardgamegeek.com/boardgameversion/620296/finnish-edition",
+      "inches": {
+        "length": "0",
+        "width": "0",
+        "depth": "0"
+      },
+      "publishers": [
+        "Feuerland Spiele",
+        "Lautapelit.fi"
+      ]
+    },
+    {
+      "version_id": "583278",
+      "name": "French edition",
+      "url": "https://boardgamegeek.com/boardgameversion/583278/french-edition",
+      "inches": {
+        "length": "14.5669",
+        "width": "11.811",
+        "depth": "2.75591"
+      },
+      "publishers": [
+        "Super Meeple"
+      ]
+    },
+    {
+      "version_id": "643677",
+      "name": "German edition, fifth printing",
+      "url": "https://boardgamegeek.com/boardgameversion/643677/german-edition-fifth-printing",
+      "inches": {
+        "length": "11.811",
+        "width": "14.3701",
+        "depth": "2.75591"
+      },
+      "publishers": [
+        "Feuerland Spiele"
+      ]
+    },
+    {
+      "version_id": "641350",
+      "name": "German edition, fourth printing",
+      "url": "https://boardgamegeek.com/boardgameversion/641350/german-edition-fourth-printing",
+      "inches": {
+        "length": "11.811",
+        "width": "14.3701",
+        "depth": "2.75591"
+      },
+      "publishers": [
+        "Feuerland Spiele"
+      ]
+    },
+    {
+      "version_id": "615221",
+      "name": "German edition, second printing",
+      "url": "https://boardgamegeek.com/boardgameversion/615221/german-edition-second-printing",
+      "inches": {
+        "length": "0",
+        "width": "0",
+        "depth": "0"
+      },
+      "publishers": [
+        "Feuerland Spiele"
+      ]
+    },
+    {
+      "version_id": "657726",
+      "name": "German edition, sixth printing",
+      "url": "https://boardgamegeek.com/boardgameversion/657726/german-edition-sixth-printing",
+      "inches": {
+        "length": "11.811",
+        "width": "14.3701",
+        "depth": "2.75591"
+      },
+      "publishers": [
+        "Feuerland Spiele"
+      ]
+    },
+    {
+      "version_id": "615222",
+      "name": "German edition, third printing",
+      "url": "https://boardgamegeek.com/boardgameversion/615222/german-edition-third-printing",
+      "inches": {
+        "length": "0",
+        "width": "0",
+        "depth": "0"
+      },
+      "publishers": [
+        "Feuerland Spiele"
+      ]
+    },
+    {
+      "version_id": "599393",
+      "name": "Hungarian first edition",
+      "url": "https://boardgamegeek.com/boardgameversion/599393/hungarian-first-edition",
+      "inches": {
+        "length": "14.57",
+        "width": "11.81",
+        "depth": "2.76"
+      },
+      "publishers": [
+        "Feuerland Spiele",
+        "Gémklub"
+      ]
+    },
+    {
+      "version_id": "591051",
+      "name": "Italian edition",
+      "url": "https://boardgamegeek.com/boardgameversion/591051/italian-edition",
+      "inches": {
+        "length": "14.1732",
+        "width": "11.811",
+        "depth": "2.75591"
+      },
+      "publishers": [
+        "Cranio Creations"
+      ]
+    },
+    {
+      "version_id": "609764",
+      "name": "Japanese edition",
+      "url": "https://boardgamegeek.com/boardgameversion/609764/japanese-edition",
+      "inches": {
+        "length": "14.5669",
+        "width": "11.811",
+        "depth": "2.75591"
+      },
+      "publishers": [
+        "Feuerland Spiele",
+        "テンデイズゲームズ (TendaysGames)"
+      ]
+    },
+    {
+      "version_id": "588632",
+      "name": "Korean edition",
+      "url": "https://boardgamegeek.com/boardgameversion/588632/korean-edition",
+      "inches": {
+        "length": "14.1732",
+        "width": "11.6142",
+        "depth": "2.75591"
+      },
+      "publishers": [
+        "Feuerland Spiele",
+        "Korea Boardgames"
+      ]
+    },
+    {
+      "version_id": "597384",
+      "name": "Polish edition",
+      "url": "https://boardgamegeek.com/boardgameversion/597384/polish-edition",
+      "inches": {
+        "length": "14.3701",
+        "width": "11.811",
+        "depth": "2.79528"
+      },
+      "publishers": [
+        "Feuerland Spiele",
+        "Portal Games"
+      ]
+    },
+    {
+      "version_id": "625892",
+      "name": "Romanian edition",
+      "url": "https://boardgamegeek.com/boardgameversion/625892/romanian-edition",
+      "inches": {
+        "length": "0",
+        "width": "0",
+        "depth": "0"
+      },
+      "publishers": [
+        "Feuerland Spiele",
+        "Regatul Jocurilor"
+      ]
+    },
+    {
+      "version_id": "598385",
+      "name": "Spanish edition, first printing",
+      "url": "https://boardgamegeek.com/boardgameversion/598385/spanish-edition-first-printing",
+      "inches": {
+        "length": "0",
+        "width": "0",
+        "depth": "0"
+      },
+      "publishers": [
+        "Feuerland Spiele",
+        "Maldito Games"
+      ]
+    },
+    {
+      "version_id": "722076",
+      "name": "Spanish edition, second printing",
+      "url": "https://boardgamegeek.com/boardgameversion/722076/spanish-edition-second-printing",
+      "inches": {
+        "length": "14.5669",
+        "width": "11.811",
+        "depth": "2.75591"
+      },
+      "publishers": [
+        "Feuerland Spiele",
+        "Maldito Games"
+      ]
+    },
+    {
+      "version_id": "591904",
+      "name": "Chinese edition",
+      "url": "https://boardgamegeek.com/boardgameversion/591904/chinese-edition",
+      "inches": {
+        "length": "0",
+        "width": "0",
+        "depth": "0"
+      },
+      "publishers": [
+        "Game Harbor"
+      ]
+    },
+    {
+      "version_id": "571945",
+      "name": "German edition, first printing",
+      "url": "https://boardgamegeek.com/boardgameversion/571945/german-edition-first-printing",
+      "inches": {
+        "length": "14.5669",
+        "width": "11.811",
+        "depth": "2.75591"
+      },
+      "publishers": [
+        "Feuerland Spiele"
+      ]
+    },
+    {
+      "version_id": "654587",
+      "name": "Traditional Chinese edition",
+      "url": "https://boardgamegeek.com/boardgameversion/654587/traditional-chinese-edition",
+      "inches": {
+        "length": "0",
+        "width": "0",
+        "depth": "0"
+      },
+      "publishers": [
+        "Game Harbor"
+      ]
+    }
+  ]
+}

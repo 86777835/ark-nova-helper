@@ -1,0 +1,218 @@
+[
+  {
+    "id": "score",
+    "cat": "基础 / 海洋",
+    "q": "新版与旧版计分有什么不同？",
+    "a": "先结算所有终局效果，再读取最终魅力和保护点数。旧分是魅力减去保护格对应的最低魅力目标；新版加该格的小白字。新分＝旧分＋100，不能直接加魅力与保护点数。16保护、80魅力得到新104／旧4；18保护、78魅力得到新108／旧8。新版不要求购买海洋。",
+    "url": "https://www.feuerland-spiele.de/fileadmin/game/Arche_Nova/AN_Rules_DE_V2_0_Web.pdf",
+    "source": "基础 / 海洋 · 官方规则 p19",
+    "cards": ""
+  },
+  {
+    "id": "ten",
+    "cat": "基础 / 海洋",
+    "q": "到10保护点数时谁弃终局卡？",
+    "a": "首次有人达到10保护点数时，全体弃一张终局卡；此前未发生则现在处理。额外终局卡按特殊效果保留，不强制仅一张。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 / 海洋 · 官方规则 p18–19",
+    "cards": ""
+  },
+  {
+    "id": "endcards",
+    "cat": "基础 / 海洋",
+    "q": "保护项目和终局计分卡有什么区别？",
+    "a": "支持保护项目时已获得的保护点数已经在轨道上；终局计分卡是在终局检查条件获得点数。先处理终局卡及赞助商等终局效果，再抄轨道，不能把项目奖励重复加。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 / 海洋 · 官方规则 p15–19",
+    "cards": ""
+  },
+  {
+    "id": "tie",
+    "cat": "基础 / 海洋",
+    "q": "平分比较什么？",
+    "a": "比较支持保护项目的次数，可核对地图左侧移走的标记。已经离开公共区的项目仍算。不是比较保护点数；次数也一样则共享胜利。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 / 海洋 · 官方规则 p19",
+    "cards": ""
+  },
+  {
+    "id": "timing",
+    "cat": "基础 / 海洋",
+    "q": "休息中交汇和回合末交汇有区别吗？",
+    "a": "在自己回合末两轨同区或超过时，其他玩家各最后一回合；休息中发生则完成休息后所有玩家各最后一回合。他人回合中因赞助商得魅力，不直接套用自己回合末的触发规则，请结合卡251官方FAQ核对。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 / 海洋 · 官方规则 p19",
+    "cards": "251"
+  },
+  {
+    "id": "association",
+    "cat": "基础 / 海洋",
+    "q": "能在一次协会行动做两次同样的任务吗？",
+    "a": "不能。升级后可把强度分配给不同任务。同一次休息间隔内再次做之前做过的任务，需要一次投入2名可用事务员；这不等于同一次行动能重复任务。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 / 海洋 · 官方规则 p14、16",
+    "cards": ""
+  },
+  {
+    "id": "x",
+    "cat": "基础 / 海洋",
+    "q": "X标记与双重、额外行动一样吗？",
+    "a": "X每枚为本次行动增加1强度，持有最多5枚。双重标记用于连续执行该行动两次，第一遍不把行动卡移到槽1；两次的X要分别支付。额外行动另依卡牌效果处理，不能把这些概念当作同一奖励。",
+    "url": "https://cdn.shopify.com/s/files/1/0947/3907/1278/files/Ark-Nova-Glossary.pdf?v=1754428544",
+    "source": "基础 / 海洋 · 官方规则 p3（双重 Multiplier）；基础规则 p8、18",
+    "cards": ""
+  },
+  {
+    "id": "upgrade",
+    "cat": "基础 / 海洋",
+    "q": "行动中升级卡牌，能立刻用 II 面吗？",
+    "a": "本次行动仍用开始时的一面，下次行动才用升级效果；但检查打牌等前置条件时，立即视为已升级。",
+    "url": "https://www.gameharbor.com.cn/uploads/GameDownloads/1689920075_28b06eb8fb67fd7182dc.pdf",
+    "source": "基础 / 海洋 · 游人码头官方 FAQ p3",
+    "cards": ""
+  },
+  {
+    "id": "animals",
+    "cat": "基础 / 海洋",
+    "q": "打动物只要付钱就可以吗？",
+    "a": "还要满足卡牌前置条件，并有符合面积、地形等要求的饲养区。合作动物园对匹配大洲图标减3钱；图标和特殊例外按实物牌核对。不能先借本次动物将带来的图标满足它自身前置条件。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 / 海洋 · 官方规则 p7、11",
+    "cards": ""
+  },
+  {
+    "id": "pouch",
+    "cat": "基础 / 海洋",
+    "q": "育儿袋下面的动物还提供图标吗？",
+    "a": "不提供。不要把面朝下存放在育儿袋的牌当作在场动物来统计图标；与地图包1救助站只露出顶部的动物不同。未收录的能力连锁请查规则书术语表“育儿袋”条目。",
+    "url": "https://cdn.shopify.com/s/files/1/0947/3907/1278/files/Ark-Nova-Glossary.pdf?v=1754428544",
+    "source": "基础 / 海洋 · 官方规则 p3（育儿袋 Pouch）",
+    "cards": ""
+  },
+  {
+    "id": "release",
+    "cat": "基础 / 海洋",
+    "q": "放归或转移后，哪块标准饲养区翻空？",
+    "a": "先找满足该动物全部饲养需求（含山水）的最小已占用标准饲养区；若没有，才选满足面积的最小已占用区；连面积都没有可匹配的，就不翻。游人码头已更正初印的不同表述。放归先失去魅力再获得保护点数。",
+    "url": "https://www.gameharbor.com.cn/uploads/GameDownloads/1689920075_28b06eb8fb67fd7182dc.pdf",
+    "source": "基础 / 海洋 · 游人码头官方 FAQ p1、3",
+    "cards": ""
+  },
+  {
+    "id": "kiosk",
+    "cat": "基础 / 海洋",
+    "q": "贩售亭怎么算邻接和收入？",
+    "a": "共享一条边才相邻，隔着空地或山水不算。每个相邻建筑或饲养区只计一次，不按接触边数重复。空标准饲养区不产生贩售亭收入，特殊饲养区即使空着也可以计。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 / 海洋 · 官方规则 p10、18–19",
+    "cards": ""
+  },
+  {
+    "id": "waves",
+    "cat": "海洋",
+    "q": "海浪什么时候发动？",
+    "a": "补展示区时新牌上的海浪才生效：弃最低位再补。多个海浪逐个执行，补牌还可能继续触发。开局铺牌忽略海浪，打出动物也不因海浪图标发动。",
+    "url": "https://capstone-games.com/cdn/shop/files/AN_Exp1_Rules_EN_0-7_low.pdf",
+    "source": "海洋 · 官方规则 p4–5",
+    "cards": ""
+  },
+  {
+    "id": "reef",
+    "cat": "海洋",
+    "q": "珊瑚住客会重发动所有动物能力吗？",
+    "a": "新珊瑚住客入场时，发动在场珊瑚效果，包括它自己的；不会把其他普通动物的能力全部重做。",
+    "url": "https://capstone-games.com/cdn/shop/files/AN_Exp1_Rules_EN_0-7_low.pdf",
+    "source": "海洋 · 官方规则 p4–5",
+    "cards": ""
+  },
+  {
+    "id": "aquarium",
+    "cat": "海洋",
+    "q": "海洋馆与动物的面积怎么区分？",
+    "a": "小海洋馆占2格，大海洋馆占5格，各最多一座；建造I即可建，须邻水。地图占格、动物标准面积和馆内玩家标记数不同，按动物卡左侧安置图示核对容量。能分放两馆的动物仍须满足山水条件，不能任意混用海洋馆与爬行馆。",
+    "url": "https://capstone-games.com/cdn/shop/files/AN_Exp1_Rules_EN_0-7_low.pdf",
+    "source": "海洋 · 官方规则 p3–5",
+    "cards": ""
+  },
+  {
+    "id": "university",
+    "cat": "海洋",
+    "q": "新大学每人能拿几个？",
+    "a": "每位玩家最多一个新类型大学。泛用大学标记本次休息间隔的可用性，休息补回；搜寻匹配动物图标的牌时，也能拿带对应图标的赞助商。",
+    "url": "https://capstone-games.com/cdn/shop/files/AN_Exp1_Rules_EN_0-7_low.pdf",
+    "source": "海洋 · 官方规则 p6",
+    "cards": ""
+  },
+  {
+    "id": "reputation",
+    "cat": "海洋",
+    "q": "声望到15就拿额外奖励吗？",
+    "a": "不是。已经到达15后，再获得声望且奖励仍在时，才在该奖励与1魅力间选择。",
+    "url": "https://capstone-games.com/cdn/shop/files/AN_Exp1_Rules_EN_0-7_low.pdf",
+    "source": "海洋 · 官方规则 p8",
+    "cards": ""
+  },
+  {
+    "id": "draft",
+    "cat": "海洋",
+    "q": "变体行动怎么轮抽？",
+    "a": "先选地图。发3张，留1传左2，再留1传左1，最终选两张不同类型替换标准行动，均从I面开始。三张全同类时，从未参加轮抽的牌中补另一类型，必须用补牌和原来的一张。单人随机3选2，遵守同类补抽例外。具体变体卡的特殊文字没有逐张收录，请查海洋术语表对应卡号和I/II面。",
+    "url": "https://capstone-games.com/cdn/shop/files/AN_Exp1_Rules_EN_0-7_low.pdf",
+    "source": "海洋 · 官方规则 p2、8",
+    "cards": ""
+  },
+  {
+    "id": "replacement",
+    "cat": "海洋",
+    "q": "哪些牌必须换掉？",
+    "a": "001、003、005、008、009、010、011、101、102、131、207、208、225、226、227、250、261、262共18张非行动牌，另外替换20张标准行动及指定奖励板块。替换牌不能和旧牌一起洗入。",
+    "url": "https://capstone-games.com/cdn/shop/files/AN_Exp1_Rules_EN_0-7_low.pdf",
+    "source": "海洋 · 官方规则 p2",
+    "cards": "001 003 005 008 009 010 011 101 102 131 207 208 225 226 227 250 261 262"
+  },
+  {
+    "id": "map9",
+    "cat": "地图包 1",
+    "q": "地理动物园如何准备和领奖？",
+    "a": "9 · 地理动物园：在五个大洲区域旁的小方格各放一枚玩家标记。 动物安置区至少一格位于匹配大洲区域时，可移除该洲标记并任选一项奖励。每洲一次，奖励可重复选；移除最后一枚再得1保护点数。群集动物不触发；建特殊饲养区时转移动物可触发。",
+    "url": "https://www.gameharbor.com.cn/uploads/GameDownloads/1689920115_7da42e45518f662e2cf9.pdf",
+    "source": "地图包 1 · 官方规则 p1",
+    "cards": ""
+  },
+  {
+    "id": "map10",
+    "cat": "地图包 1",
+    "q": "救助站如何收留动物？",
+    "a": "10 · 救助站：保留地图顶部三个槽位，开局不预放动物。 只有地图的刨挖奖励才能把弃掉的非萌宠动物插入空槽。图标及大小视为在园，能触发其他牌，但不执行该动物自身效果；不需支付或满足条件，不能放归。最多三张，不能替换；其他牌的刨挖不能收留。",
+    "url": "https://www.gameharbor.com.cn/uploads/GameDownloads/1689920115_7da42e45518f662e2cf9.pdf",
+    "source": "地图包 1 · 官方规则 p2",
+    "cards": "221"
+  },
+  {
+    "id": "solo",
+    "cat": "基础 / 海洋",
+    "q": "官方单人什么时候结束？",
+    "a": "共6轮，常规回合为7、6、5、4、3、2，总计27；额外行动不另扣常规回合。两轨交汇不提前结束。最后一轮末直接结算，不再休息和收入。最终新分至少100（旧分至少0）获胜。本站只提供准备与结算，不计步。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 / 海洋 · 官方规则 p20",
+    "cards": ""
+  },
+  {
+    "id": "solo-threshold",
+    "cat": "基础 / 海洋",
+    "q": "单人起始魅力和赞助商门槛？",
+    "a": "难度选初始魅力20、10或0。2023更新把“最多25魅力”的赞助商条件在前两档改成45、35；0魅力档仍为25。不用海洋也适用。",
+    "url": "https://capstone-games.com/cdn/shop/files/AN_Exp1_Rules_EN_0-7_low.pdf",
+    "source": "基础 / 海洋 · 官方规则 p8",
+    "cards": ""
+  },
+  {
+    "id": "solo-board",
+    "cat": "基础 / 海洋",
+    "q": "官方单人怎样准备？",
+    "a": "三张基础保护项目不封锁。不用休息标记，在单人板左列放7枚闲置颜色标记。每次休息移出最上面一枚到最低空捐赠位，再把其余标记移回左列；最后一轮没有休息。协会板上方最多两张项目；使用牌上蓝色单人替代效果。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 / 海洋 · 官方规则 p20",
+    "cards": ""
+  }
+]

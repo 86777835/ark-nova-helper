@@ -1,0 +1,19 @@
+import assert from 'node:assert/strict';
+import {BASE,OUT,browser,phone,action,shot,setup,score} from './helpers.mjs';
+const b=await browser();
+try{
+ for(const marine of [false,true]){const c1=await phone(b),c2=await phone(b),p=await c1.newPage(),q=await c2.newPage();const errors=[];p.on('pageerror',e=>errors.push(e.message));q.on('pageerror',e=>errors.push(e.message));await setup(p,marine);const room=new URL(p.url()).searchParams.get('r');
+  if(marine){await p.selectOption('[data-player="p0"][data-field="map"]','9');await p.waitForTimeout(200);await p.selectOption('[data-player="p1"][data-field="map"]','10');await p.waitForTimeout(200);}
+  await shot(p,marine?'setup_marine':'setup_base');await p.locator('#checklist').screenshot({path:`${OUT}/ark_preparation_${marine?'marine':'base'}.png`});
+  await q.goto(p.url());await q.waitForSelector('[data-act="direct"]');assert(await q.locator('[data-act="direct"]').isDisabled());await p.locator('[data-check="projects"]').check();await q.waitForSelector('[data-check="projects"]:checked');await action(p,'begin');await q.waitForSelector('[data-act="break"]');
+  await action(q,'break');await p.waitForSelector('#break-list');await q.locator('[data-check="hand"]').check();await p.waitForSelector('[data-check="hand"]:checked');await shot(p,marine?'break_marine':'break_base');await action(p,'undo');await q.waitForSelector('[data-check="hand"]:not(:checked)');await action(q,'break');
+  await p.selectOption('#end-kind','break');await action(p,'end');assert.match(await q.locator('main').innerText(),/所有人各有最后一回合/);await action(p,'toScore');await q.waitForSelector('#score-form');
+  // A local form draft survives another phone's update.
+  await p.fill('[name="appeal"]','80');await p.fill('[name="conservation"]','16');await score(q,'p1',78,18);assert.equal(await p.inputValue('[name="appeal"]'),'80');await shot(p,'score_'+(marine?'marine':'base'));await score(p,'p0');await action(p,'finish');await p.waitForSelector('#shot');await q.waitForSelector('#shot');assert.match(await p.locator('#shot').innerText(),/新 108 \/ 旧 8/);await shot(p,'result_'+(marine?'marine':'base'));
+  await action(p,'image');const img=p.locator('.overlay img');await img.waitFor();assert((await img.getAttribute('src')).startsWith('data:image/png'));await shot(p,'long_image');await p.click('#close-image');
+  await p.waitForFunction(async code=>(await (await fetch('/api/games')).json()).some(g=>g.code===code),room);let games=await (await p.request.get(new URL('api/games',BASE).href)).json();const saved=games.find(g=>g.code===room);assert.equal(saved.config.marine,marine);assert.equal(saved.players[0].score.appeal,80);assert.equal(saved.results[0].value.new,108);
+  await action(p,'reopen');await p.waitForSelector('#score-form');await score(p,'p0',85,16);await action(p,'finish');await p.waitForFunction(async code=>(await (await fetch('/api/games')).json()).some(g=>g.code===code&&g.results[0].value.new===109),room);games=await (await p.request.get(new URL('api/games',BASE).href)).json();assert.equal(games.filter(g=>g.code===room).length,1);assert.deepEqual(errors,[]);console.log('PASS dual phone',marine?'marine':'base','setup/break/undo/drafts/score/result/image/archive/revision');await c1.close();await c2.close();
+ }
+ const c=await phone(b),p=await c.newPage();await setup(p,false,true);await action(p,'direct');await score(p,'p0',80,16);await score(p,'p1',78,18);await action(p,'finish');await p.waitForSelector('#shot');console.log('PASS experienced direct scoring with proxy entry');
+ await setup(p,true,false,1);await action(p,'direct');await score(p,'p0',80,16);await action(p,'finish');await p.waitForSelector('#shot');assert.match(await p.locator('#shot').innerText(),/官方单人获胜/);await shot(p,'solo_result');console.log('PASS official solo result');
+}finally{await b.close();}

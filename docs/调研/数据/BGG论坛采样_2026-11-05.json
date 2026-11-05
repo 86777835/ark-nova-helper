@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-05",
+  "note": "仅保存采样元数据；长帖只读第一页，不代表完整线程。",
+  "threads": [
+    {
+      "thread_id": 2923237,
+      "url": "https://boardgamegeek.com/thread/2923237/list-of-illegal-moves-in-ark-nova",
+      "title": "List of illegal moves in Ark Nova?",
+      "total_posts": 5,
+      "read_posts": 5,
+      "read_pages": [
+        1
+      ],
+      "created": "2022-08-25T05:30:41+00:00"
+    },
+    {
+      "thread_id": 3057107,
+      "url": "https://boardgamegeek.com/thread/3057107/2-rules-updates-for-ark-nova",
+      "title": "2 rules updates for Ark Nova",
+      "total_posts": 331,
+      "read_posts": 25,
+      "read_pages": [
+        1
+      ],
+      "created": "2023-03-31T12:17:52+00:00"
+    },
+    {
+      "thread_id": 3599073,
+      "url": "https://boardgamegeek.com/thread/3599073/ark-nova-not-worth-the-hype-by-thousand-word-revie",
+      "title": "Ark Nova: Not Worth the Hype, by Thousand Word Reviews",
+      "total_posts": 49,
+      "read_posts": 25,
+      "read_pages": [
+        1
+      ],
+      "created": "2025-10-26T03:29:55+00:00"
+    },
+    {
+      "thread_id": 2887431,
+      "url": "https://boardgamegeek.com/thread/2887431/brdgmme-ark-nova-solo-helper-web-application-arno",
+      "title": "brdgm.me Ark Nova Solo Helper - Web Application (ARNO)",
+      "total_posts": 162,
+      "read_posts": 25,
+      "read_pages": [
+        1
+      ],
+      "created": "2022-06-21T22:42:10+00:00"
+    }
+  ]
+}

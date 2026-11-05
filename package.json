@@ -1,0 +1,1 @@
+{"name":"ark-nova-helper","private":true,"type":"module","scripts":{"test":"node tests/test_logic.mjs && node tests/test_stream.mjs","dev":"wrangler dev --port 8921"}}
