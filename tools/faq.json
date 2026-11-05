@@ -1,5 +1,275 @@
 [
   {
+    "id": "players",
+    "cat": "基础",
+    "q": "一局几个人？",
+    "a": "1–4 人。2、3、4 人各有布置差别，1 人用官方单人规则。规则书没写游戏时长。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 · 官方规则 p3–5、20",
+    "cards": ""
+  },
+  {
+    "id": "setup-player",
+    "cat": "基础",
+    "q": "开局每人拿什么？",
+    "a": "一张动物园地图、5 张 I 面朝上的行动卡（动物放槽 1，其余随机放槽 2–5）、25 钱、4 个事务员（1 个可用、3 个躺下）、7 个玩家标记放地图左侧。魅力起点按顺位 0／1／2／3，保护点数和声望放起点。抽 2 张终局计分卡自己看；抽 8 张动物园卡留 4 张，其余弃掉。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 · 官方规则 p4–5",
+    "cards": ""
+  },
+  {
+    "id": "turn",
+    "cat": "基础",
+    "q": "一回合能做什么？",
+    "a": "只做一个行动：从 5 张行动卡里挑一张，按它所在槽位的强度执行。做不了或不想做，也可以挑任意一张卡改拿 1 个 X 标记。不能“什么都不做”，比如打 0 只动物、建 0 个建筑。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 · 官方规则 p6、8、18",
+    "cards": ""
+  },
+  {
+    "id": "strength",
+    "cat": "基础",
+    "q": "行动卡的强度怎么算？",
+    "a": "强度＝卡所在槽位上的数字，最左 1、最右 5。用完把这张卡放到槽 1，原来在它左边的卡各往右挪一格。每用 1 个 X 标记强度 +1，但要在行动开始前用。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 · 官方规则 p8",
+    "cards": ""
+  },
+  {
+    "id": "upgrade-how",
+    "cat": "基础",
+    "q": "怎么升级行动卡？",
+    "a": "拿到升级奖励时，任选一张行动卡从 I 面翻到 II 面，槽位不变。来源有四个：保护轨 2 点（也可改为多一个事务员）、声望轨、第二个合作动物园、第二所大学。所以 5 张卡不可能全升级。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 · 官方规则 p8、18",
+    "cards": ""
+  },
+  {
+    "id": "build-cost",
+    "cat": "基础",
+    "q": "建造怎么算费用？",
+    "a": "费用＝建筑格数 × 2 钱，盖之前先付。I 面只建 1 个，格数不超过强度；II 面可以建多个不同建筑，总格数不超过强度，逐个付钱逐个建。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 · 官方规则 p10",
+    "cards": ""
+  },
+  {
+    "id": "build-place",
+    "cat": "基础",
+    "q": "建筑能放在哪？",
+    "a": "要和已有建筑共边；第一个建筑至少一格在地图边界格上。不能出界、不能叠放、不能盖水和岩石；带建造升级图标的格要先升级建造才能盖。贩售亭之间至少隔 2 格。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 · 官方规则 p10",
+    "cards": ""
+  },
+  {
+    "id": "animal-need",
+    "cat": "基础",
+    "q": "打动物需要满足什么？",
+    "a": "三件事：满足卡左侧条件；付得起左上角的价钱（合作动物园每个对应大洲图标减 3 钱）；有地方住：够大的空标准饲养区，或卡上标明可住的特殊饲养区，邻水、邻岩要求也要满足。萌宠只能进萌宠园。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 · 官方规则 p11",
+    "cards": ""
+  },
+  {
+    "id": "animal-multi",
+    "cat": "基础",
+    "q": "一次能打几只动物？",
+    "a": "看行动卡上的表，强度越高能打越多，规则书例子里强度 5 能打 2 只。多只要一只一只来，第一只全部结算完（“完成后”效果除外）再打第二只；第二只也可以不打。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 · 官方规则 p11–12",
+    "cards": ""
+  },
+  {
+    "id": "display-range",
+    "cat": "基础",
+    "q": "卡牌行动能从展示区拿哪几张？",
+    "a": "I 面：从牌堆抽；或者强度至少 5 时改成从展示区任拿 1 张（不看声望），这样就不再抽牌。升级到 II 面后，声望范围内的牌都能拿，也能混着从牌堆抽；直接拿 1 张的门槛降到强度 3。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 · 官方规则 p9",
+    "cards": ""
+  },
+  {
+    "id": "reputation-range",
+    "cat": "基础",
+    "q": "声望范围是什么？",
+    "a": "展示区每张牌下面有编号 1–6。你的声望标记对着的那格，加上编号更小的格，就是你的声望范围。声望越高，能从展示区拿、打的牌越多。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 · 官方规则 p9",
+    "cards": ""
+  },
+  {
+    "id": "assoc-tasks",
+    "cat": "基础",
+    "q": "协会行动有哪些任务？",
+    "a": "四种，强度要不低于任务数值：2 声望 +2；3 拿合作动物园；4 拿大学；5 保护项目（支持在场项目或打新项目牌）。每个任务放 1 个可用事务员；这个任务上已经有你 1 个事务员，就要放 2 个；已经有 3 个就暂时不能做。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 · 官方规则 p14–15",
+    "cards": ""
+  },
+  {
+    "id": "donate",
+    "cat": "基础",
+    "q": "捐赠怎么做？",
+    "a": "协会行动升级后才能捐。同一次行动里至少做了 1 个任务，就可以额外捐 1 次：付捐赠区露出的最小金额，用玩家标记盖住那格，得 1 保护点数。不需要事务员。只剩最后一格后，每次都付 12 钱，不用再盖。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 · 官方规则 p16",
+    "cards": ""
+  },
+  {
+    "id": "sponsor-alt",
+    "cat": "基础",
+    "q": "赞助商行动不打牌能做什么？",
+    "a": "可以改为把休息标记往前推 X 格（X＝强度），拿 X 钱；升级后拿 2X 钱。休息标记不用走满也照样拿全额。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 · 官方规则 p17",
+    "cards": ""
+  },
+  {
+    "id": "money",
+    "cat": "基础",
+    "q": "钱不够能做什么？",
+    "a": "能拿钱的：赞助商行动改拿钱；每次休息的收入；盖到地图上的钱奖励马上拿。不花钱的：卡牌行动、X 标记行动。打动物时卡牌给的钱要后面才到，得先付得起全价。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 · 官方规则 p8、10–11、17–18",
+    "cards": ""
+  },
+  {
+    "id": "x-how",
+    "cat": "基础",
+    "q": "X 标记怎么拿、怎么用？",
+    "a": "拿法：X 标记行动（任选一张行动卡挪到槽 1，拿 1 个）；推休息标记到终点的人拿 1 个；地图左侧奖励等效果也会给。用法：行动开始前每用 1 个强度 +1，还回公共区。最多持有 5 个，满 5 个就不能做 X 标记行动。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 · 官方规则 p7–8、15、18",
+    "cards": ""
+  },
+  {
+    "id": "break-when",
+    "cat": "基础",
+    "q": "什么时候休息？",
+    "a": "休息标记推到休息轨最后一格就触发。卡牌行动推 2 格，赞助商改拿钱推 X 格，有些卡牌效果也会推。触发的人先把这回合做完，然后全体一起休息。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 · 官方规则 p7、9、17–18",
+    "cards": ""
+  },
+  {
+    "id": "break-steps",
+    "cat": "基础",
+    "q": "休息要做哪些事？",
+    "a": "按顺序：1 手牌弃到上限；2 行动卡上的双重、毒液、缠绕标记还回去；3 事务员全部回来，协会板上的合作动物园和大学补齐；4 展示区弃 1、2 号格的牌，其余下移补满；5 拿收入（魅力、贩售亭、收入图标）；6 休息标记回人数起点。然后由触发者的下一位继续。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 · 官方规则 p18–19",
+    "cards": ""
+  },
+  {
+    "id": "income",
+    "cat": "基础",
+    "q": "收入怎么算？",
+    "a": "三部分：魅力轨上你标记旁边印的钱（例：魅力 7 拿 11）；贩售亭，每个单独算，每相邻 1 个独有建筑、特殊饲养区、已占用标准饲养区或休憩亭拿 1 钱；赞助商牌和地图左侧已解锁奖励上的收入图标。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 · 官方规则 p18–19",
+    "cards": ""
+  },
+  {
+    "id": "handlimit",
+    "cat": "基础",
+    "q": "手牌上限是多少？",
+    "a": "平时 3 张，有一所特定大学可以变成 5 张，这是唯一的办法。只在休息时检查，平时手牌多少都行。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 · 官方规则 p9、14、18",
+    "cards": ""
+  },
+  {
+    "id": "reputation-use",
+    "cat": "基础",
+    "q": "声望有什么用？",
+    "a": "决定展示区里哪些牌在你的声望范围内；有些赞助商要求最低声望；声望轨上的奖励格（包括升级）走到就拿。想升到 10 以上，要先升级卡牌行动。到 15 封顶，之后每多 1 声望改拿 1 魅力。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 · 官方规则 p8–9、14、17",
+    "cards": ""
+  },
+  {
+    "id": "cons-track",
+    "cat": "基础",
+    "q": "保护轨上有哪些奖励？",
+    "a": "2 点：升级一张行动卡，或多激活 1 个事务员，每个人都能拿。5 点、8 点：拿 5 钱或旁边的奖励板块之一，板块拿完还能拿 5 钱。10 点：第一次有人到 10 时，全体各弃 1 张终局计分卡。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 · 官方规则 p18",
+    "cards": ""
+  },
+  {
+    "id": "support",
+    "cat": "基础",
+    "q": "怎么支持保护项目？",
+    "a": "用协会行动的“保护项目”任务（强度 5）。满足项目上一个还没被标记的条件，从地图左侧拿 1 个玩家标记放上去，按奖励加保护点数（有的还加声望）。露出的地图奖励马上拿，有的每次休息还会再给。每个项目每人只能支持一次。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 · 官方规则 p14–15",
+    "cards": ""
+  },
+  {
+    "id": "project-icons",
+    "cat": "基础",
+    "q": "保护项目的图标怎么数？",
+    "a": "数你所有动物牌、赞助商牌右上角的图标（左上角的水、岩要求也算），加上合作动物园和大学。卡左侧的条件不算，保护项目牌上的图标也不算。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 · 官方规则 p15；术语表 p1",
+    "cards": ""
+  },
+  {
+    "id": "project-new",
+    "cat": "基础",
+    "q": "打新的保护项目牌放哪？",
+    "a": "只有马上要支持时才能打。放协会板上方最左边，原有的往右挪；上方张数有人数上限，超了就把最右边那张弃掉，上面的玩家标记回各自备用区，不回地图。下方的基础项目永远不动。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 · 官方规则 p15；术语表 p1",
+    "cards": ""
+  },
+  {
+    "id": "partner",
+    "cat": "基础",
+    "q": "合作动物园有什么用？",
+    "a": "打该大洲的动物，每个大洲图标便宜 3 钱；提供 1 个该大洲图标；有些动物要求有对应合作动物园。最多 4 个且大洲不能重复，第 3、4 个要先升级协会行动。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 · 官方规则 p7、14",
+    "cards": ""
+  },
+  {
+    "id": "uni",
+    "cat": "基础",
+    "q": "大学有什么用？",
+    "a": "给研究图标和上面印的奖励，有的加声望；有一所能把手牌上限提到 5。每种只能拿一所，最多 3 所。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 · 官方规则 p7、14",
+    "cards": ""
+  },
+  {
+    "id": "special-enc",
+    "cat": "基础",
+    "q": "特殊饲养区怎么用？",
+    "a": "萌宠园（3 格）、爬行馆和鸟禽馆（各 5 格），每种每园只能有 1 个，后两个要升级建造才能建。住进去时不翻面，用玩家标记占卡上标的格数；格子不够就住不下。空着的特殊饲养区也算贩售亭收入。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 · 官方规则 p10、12、18",
+    "cards": ""
+  },
+  {
+    "id": "two-player",
+    "cat": "基础",
+    "q": "两人局有什么不同？",
+    "a": "用 6 个不用的颜色标记封住：左项目左档、中项目中档、右项目右档，以及捐赠区左列 3 格，谁都不能用。另外 2 人局翻 3 张基础项目，休息标记放 2 人起点。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 · 官方规则 p4–5",
+    "cards": ""
+  },
+  {
+    "id": "end-when",
+    "cat": "基础",
+    "q": "游戏什么时候结束？",
+    "a": "你的回合结束时或休息中，魅力和保护点数两个标记进入同一计分区，或者已经交错，就触发终局。回合末触发：其他人各再走一回合，你不走。休息中触发：包括你在内所有人各再走一回合。",
+    "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
+    "source": "基础 · 官方规则 p19",
+    "cards": ""
+  },
+  {
     "id": "score",
     "cat": "基础 / 海洋",
     "q": "新版与旧版计分有什么不同？",
@@ -12,7 +282,7 @@
     "id": "ten",
     "cat": "基础 / 海洋",
     "q": "到10保护点数时谁弃终局卡？",
-    "a": "首次有人达到10保护点数时，全体弃一张终局卡；此前未发生则现在处理。额外终局卡按特殊效果保留，不强制仅一张。",
+    "a": "首次有人到 10 保护点数时，全体弃 1 张终局卡；还没弃的现在弃。因特殊效果多拿的终局卡照常保留。",
     "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf",
     "source": "基础 / 海洋 · 官方规则 p18–19",
     "cards": ""

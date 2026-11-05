@@ -200,6 +200,8 @@ body>header+main>section,#lessons>section{background:var(--card);border:1px soli
 main>section h2{margin:4px 0 8px}
 main>section p{margin:0 0 10px}
 .badge{display:inline-block;padding:1px 9px;border-radius:999px;background:#e6efdf;color:var(--night);font-size:12px}
+#lessons ul{margin:0 0 10px;padding-left:1.2em}
+#lessons li{margin:0 0 6px}
 .source{display:inline-block;font-size:12px;color:#9a8a6f;margin-top:2px}
 .guide-hero{width:100%;height:170px;object-fit:cover;border-radius:14px;margin-bottom:6px}
 main>nav.links{justify-content:space-around;margin:6px 0 12px}
