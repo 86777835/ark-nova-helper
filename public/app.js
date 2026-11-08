@@ -6,6 +6,8 @@ import {morph,esc} from './dom.js';
 const $=s=>document.querySelector(s);
 const params=new URLSearchParams(location.search);
 const code=params.get('r');
+// 定先手用总入口的手指轮盘 / 抽签，点「返回」回到这里
+const orderUrl=n=>`https://boardgame.leisurecat.cloud/?order=${n}&back=${encodeURIComponent(location.href)}`;
 const store={get(k){try{return localStorage.getItem(k);}catch{return null;}},set(k,v){try{localStorage.setItem(k,v);}catch{}}};
 const actor=store.get('ark-actor')||crypto.randomUUID();store.set('ark-actor',actor);
 
@@ -129,7 +131,7 @@ function setup(){
  <section class="card"><h2>扩展</h2><label class="toggle"><input type="checkbox" data-config="marine" ${c.marine?'checked':''} ${dis}><span class="tbox" aria-hidden="true"></span><span><b>海洋世界</b><small>换牌、大学、海洋馆、变体行动</small></span></label></section>
  <section class="card"><h2>计分</h2>${seg('config','scoring',[['new','新版（默认）'],['old','旧版']],c.scoring,dis)}<p class="note">新版 = 旧版 + 100。两种分数都会显示。</p></section>
  <section class="card"><h2>座位与地图</h2><p class="note">按顺时针填。每人可以用不同的地图。</p>${ps.map(seatRow).join('')}
-  ${c.n>1?`<div class="first"><h3>先手</h3>${seg('config','first',ps.map((p,i)=>[i,esc(p.name)]),c.first,dis)}<button type="button" class="small" data-act="random" ${dis}>随机先手</button></div>`:''}</section>
+  ${c.n>1?`<div class="first"><h3>先手</h3>${seg('config','first',ps.map((p,i)=>[i,esc(p.name)]),c.first,dis)}<button type="button" class="small" data-act="order" ${dis}>手指轮盘定先手 ›</button></div>`:''}</section>
  <section class="card" id="checklist"><button type="button" class="fold" data-act="fold" aria-expanded="${ui.prepOpen}"><span>准备清单</span><small>${done}/${items.length}</small></button>
   ${ui.prepOpen?`<p class="note">勾选会同步给全桌，不勾也能开始。</p>${checklist(items,'setup')}`:''}</section>
  <div class="cta">${ui.quick?direct+begin:begin+direct}</div>`;
@@ -242,7 +244,7 @@ $('#app').addEventListener('click',async e=>{
   else if(a==='config')setConfig(b.dataset.key,b.dataset.val);
   else if(a==='tab')ui.tab=b.dataset.tab;
   else if(a==='fold')ui.prepOpen=!ui.prepOpen;
-  else if(a==='random')setConfig('first',crypto.getRandomValues(new Uint32Array(1))[0]%S.config.n);
+  else if(a==='order')location.href=orderUrl(S.config.n);
   else if(a==='break')send({t:'break',open:!S.breakOpen});
   else if(a==='trigger')ui.trigger=b.dataset.val;
   else if(a==='endKind')ui.endKind=b.dataset.val;
