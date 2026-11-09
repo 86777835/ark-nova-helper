@@ -74,7 +74,7 @@ setInterval(()=>{if(ws?.readyState===1)ws.send('ping');},25000);
 // ---------- landing ----------
 function landing(){
  const rooms=ui.rooms.map(r=>`<a class="room" href="/?r=${r.code}"><b class="rcode">${r.code}</b><span class="rinfo"><span>${esc(r.players.join('、'))}</span><small>${esc(meta(r.config))}</small></span><span class="chip ${r.stage==='over'?'':'live'}">${STAGE[r.stage]||'进行中'}</span></a>`).join('');
- return `<header class="hero"><a class="back-nav" href="https://boardgame.leisurecat.cloud">‹ 全部游戏</a>
+ return `<header class="hero"><a class="back-nav" href="https://boardgame.leisurecat.cloud">‹ 全部游戏</a><a class="back-nav rate-nav" href="https://boardgame.leisurecat.cloud/?rate=ark-nova&back=${encodeURIComponent(location.href)}">★ 写评价</a>
  <img class="cover" src="/img/ark-nova.jpg" width="140" height="171" alt="方舟动物园英文版官方封面">
  <h1>方舟动物园小助手</h1><p class="motto">开局不漏 · 计分不错</p></header>
  <main class="landing">

@@ -230,3 +230,5 @@ main>nav.links{justify-content:space-around;margin:6px 0 12px}
   .cta.row{grid-template-columns:1fr 1fr}
   .cta.row>.primary{grid-column:1/-1}
 }
+/* 写评价: opens this game's review form on the hub, then 返回 comes back here */
+.hero .rate-nav{left:auto;right:12px}
