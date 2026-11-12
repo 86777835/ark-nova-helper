@@ -10,7 +10,8 @@
 - `src/worker.js`：Room / Lobby / Archive，权威reduce、revision冲突检查、主持人权限、自动存档及回原房修订；主持凭据不广播。
 - `public/history.*`：按模式、基础/海洋、人数、玩家/房间/地图过滤；统计统一新版，按人数、扩展、官方单人难度分组。
 - `tools/讲解稿.md`、`tools/faq.json`：9节教程、24条FAQ。`public/guide.*` 支持关键词别名、版本和卡号过滤；`public/solo.html` 为官方单人准备/结算及明确标注的社区ARNO外链。
-- `src/chat.js`、`src/sse.js`、`public/chat.js`：仅依据上述两份本站资料回答；Flash → Qwen → Pro，每级9秒开始/停顿8秒切换；读取匹兹堡KV，不建cron、不显示模型名。
+- `src/chat.js`、`src/sse.js`、`public/chat.js`：先依据上述两份本站资料回答；Flash → Qwen → Pro，每级9秒开始/停顿8秒切换；读取匹兹堡KV，不建cron、不显示模型名。
+- 联网查找（2026-11-12，照匹兹堡试点移植）：本站资料没有答案的方舟规则问题，模型只回一行「【需联网】+英文搜索词」（以 Ark Nova 开头，涉及具体卡牌带英文名或编号，海洋世界带 Marine Worlds），服务器调 DeepSeek 搜索接口（`/v1/tools/search`，先只搜 BGG，不足3条再搜全网，最多6条），再让模型只依据摘要作答、用 [1] [2] 标出处，并指出每个说法属于基础、新版计分、旧版计分还是海洋世界。页面在这类回答上方固定显示「本站资料没有这一条，以下来自网上讨论，本站未核对」，下面列来源链接；搜不到或搜索失败就明说，不编。无关问题不联网。服务器只按整行转发模型输出，模型先解释再要求联网时也能接住。每次联网在日志记一条 `chat web search`，核对后补进常见问题。
 - `public/img/ark-nova.jpg`：总入口591×720英文官方封面，逐字节复制，无放大或重绘。`nature.jpg` 与 `avatar.png` 为Codex内置图片工具原创，见 `docs/素材来源.md`。
 - `public/_headers`：图片7天、vendor一年。`wrangler.jsonc` Worker暂名 `ark-nova-helper`、namespace `1091`、原KV绑定、observability，route 为 `ark.leisurecat.cloud`（custom domain），无 cron。
 
@@ -25,7 +26,16 @@ node tests/run.mjs
 rm node_modules
 ```
 
-`tests/run.mjs` 串行执行9个测试文件，写入 `tests/测试结果.md`。浏览器依赖playwright-core与本机Chrome。完整对局测试只允许localhost/127.0.0.1；评价全部拦截，不往线上写数据。规则助手采用 `--no-key`，不调用远程模型。另有本地拦截流测试验证Qwen格式与中途reset不显示模型名。
+`tests/run.mjs` 串行执行9个测试文件，写入 `tests/测试结果.md`。
+
+规则助手的模型切换和联网查找另跑（假 DeepSeek 服务在 8790 端口，两条之间隔1分钟以上，避开每分钟8问的限流）：
+
+```sh
+wrangler dev --port 8921 --var DEEPSEEK_API_KEY:fake --var DEEPSEEK_BASE:http://127.0.0.1:8790 --var CHAT_CF_MODEL:@cf/none/missing
+node tests/test_chat.mjs http://localhost:8921/ /tmp/claude-501/codex_tasks/shots --mock-upstream   # 备用模型切换、排队、中途停顿
+node tests/test_chat.mjs http://localhost:8921/ /tmp/claude-501/codex_tasks/shots --mock-web        # 联网查找：能答不联网、标记拆块、先解释后标记、没搜到、搜索失败、无关问题、历史不带标签
+node tests/test_chat.mjs https://ark.leisurecat.cloud/ /tmp/claude-501/codex_tasks/shots --live     # 线上实问：一题本站能答、一题要联网
+```浏览器依赖playwright-core与本机Chrome。完整对局测试只允许localhost/127.0.0.1；评价全部拦截，不往线上写数据。规则助手采用 `--no-key`，不调用远程模型。另有本地拦截流测试验证Qwen格式与中途reset不显示模型名。
 
 截图目录：`/tmp/claude-501/codex_tasks/shots/`，前缀 `ark_`。包括落地、基础/海洋配置、准备、休息、两轨新旧计分、结算、长图、教程、FAQ、单人说明和单人结算。
 
@@ -47,6 +57,6 @@ node tools/build_pages.mjs
 - 房间凭四位码同桌协作，无登录系统；持码者可代填任意玩家分数，主持负责配置、结算、修订与撤销。第一位连接者领取主持权，凭据保存在浏览器localStorage；请保留主持手机数据。
 - 撤销为上一步共享操作；修订会暂时撤下旧存档，重新结算后以同一gid覆盖。表单未提交草稿保存在当前页面内存，能跨同步和断线保留，刷新页面会丢弃未提交草稿。
 - 未实测微信真机；已测Chrome手机视口390px/320px、触控、导航、断线重连。复制链接依赖浏览器剪贴板支持；失败会显示错误，可手动分享地址栏。
-- 未设置密钥或验证线上模型可用性；无密钥显示明确错误。密钥由用户自行设置：`wrangler secret put DEEPSEEK_API_KEY --name ark-nova-helper`。KV本地模拟，不更改匹兹堡线上检查结果。
+- 线上密钥已由用户设置（`wrangler secret put DEEPSEEK_API_KEY --name ark-nova-helper`），2026-11-12 线上实测普通回答和联网查找都正常；无密钥时显示明确错误。KV本地模拟，不更改匹兹堡线上检查结果。
 
 游戏、规则与官方盒封版权归原权利方。本站讲解为自行概括的非官方辅助说明。
