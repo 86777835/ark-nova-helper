@@ -84,6 +84,7 @@ function landing(){
    <form id="join" class="join"><label class="sr-only" for="joinCode">房间码</label><input id="joinCode" placeholder="房间码" maxlength="4" required autocapitalize="characters" autocomplete="off"><button class="dark">加入</button></form>
    <button class="linkish" data-act="quick">熟手：跳过准备，直接计分 ›</button>
   </div>
+  <a class="card teachgo" href="/teach"><span class="tg-i">讲</span><span><b>第一次玩？6 分钟讲规则</b>照着念就能开局，不懂的词点一下</span><i>›</i></a>
   <div class="tiles">
    <a class="tile" href="/guide.html"><span class="ico">教</span><span><b>新手教程</b><small>图文 + 常见问题</small></span></a>
    <a class="tile" href="/history.html"><span class="ico">录</span><span><b>往期对局</b><small>战绩与存档</small></span></a>

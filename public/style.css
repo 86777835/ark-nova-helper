@@ -232,3 +232,59 @@ main>nav.links{justify-content:space-around;margin:6px 0 12px}
 }
 /* 写评价: opens this game's review form on the hub, then 返回 comes back here */
 .hero .rate-nav{left:auto;right:12px}
+
+/* teach page (teach.html): a script to read aloud, terms that open a note, one-tap questions to the rules assistant */
+.teach .tlead{margin:14px 2px 8px;font:500 14px/1.7 var(--sans);color:var(--muted)}
+.teach .tlead b{color:var(--night);text-decoration:underline dotted;text-underline-offset:3px}
+.tmode{display:flex;align-items:center;gap:6px;margin:4px 2px 0;font:600 13px var(--sans);color:var(--muted)}
+.tmode button{flex:1;min-height:38px;padding:4px 8px;border-radius:19px;border:1.5px solid rgba(31,67,52,.4);background:var(--card);color:var(--night);font:700 14px var(--sans)}
+.tmode button[aria-pressed="true"]{background:var(--night);border-color:var(--night);color:#fff8e6}
+.tnav{position:sticky;top:0;z-index:5;display:flex;gap:6px;overflow-x:auto;margin:0 -14px;padding:8px 14px;background:rgba(236,230,211,.94);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);scrollbar-width:none}
+.tnav::-webkit-scrollbar{display:none}
+.tnav a{flex:none;display:inline-flex;align-items:center;gap:5px;padding:5px 11px;border-radius:14px;border:1px solid rgba(31,67,52,.3);background:rgba(31,67,52,.06);color:var(--night);font:600 13px var(--sans);text-decoration:none}
+.tnav a i{font:700 12px var(--serif);font-style:normal;color:var(--gold)}
+.tpart{margin-top:12px;padding:4px 14px 14px;background:var(--card);border:1px solid var(--line);border-radius:14px;scroll-margin-top:52px}
+.tpart h2,.ticons{display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin:12px 0 6px}
+.tpart h2 i{font:700 16px var(--serif);font-style:normal;color:var(--gold);margin-right:8px}
+.tpart h2 small,.ticons small{font:500 12px var(--sans);letter-spacing:0;color:var(--muted)}
+.ticons{margin:22px 2px 0}
+.tline{margin-top:9px;font:500 17px/1.85 var(--sans);color:var(--ink)}
+.term{display:inline;min-height:0;padding:0 2px;margin:0 1px;border:0;border-radius:0;background:none;font:inherit;color:var(--night);font-weight:700;text-decoration:underline dotted 1.5px;text-underline-offset:4px;cursor:pointer}
+.tim{display:inline-block;object-fit:contain;border-radius:3px}
+.term .tim,.tlab .tim{height:1.35em;width:auto;max-width:2.8em;vertical-align:-.3em;margin-right:3px}
+.tasks{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;padding-top:10px;border-top:1px dashed var(--line)}
+.tasks em{width:100%;font:600 12px var(--sans);font-style:normal;color:var(--muted)}
+.tq{display:inline-flex;align-items:center;gap:6px;min-height:34px;padding:5px 12px;border-radius:17px;border:1px solid rgba(138,90,52,.4);background:#fffaf0;color:var(--wood);font:700 13.5px/1.4 var(--sans);text-align:left}
+.tq>span{color:var(--ink);font-weight:500}
+.tnote{margin-top:4px;font:500 13.5px/1.6 var(--sans);color:var(--muted)}
+.tnotei{margin:0;border-top:1px dashed var(--line)}
+.tnotei:last-of-type{border-bottom:1px dashed var(--line)}
+.tnotei summary{cursor:pointer;min-height:44px;display:flex;align-items:center;padding:6px 0;font-weight:600}
+.tnotei summary i{font:700 13px var(--serif);font-style:normal;color:var(--gold);margin-right:8px}
+.tnotei summary .tnw{margin-left:8px;padding:1px 6px;border-radius:8px;background:rgba(31,90,140,.12);color:#1f5a8c;font:600 11px var(--sans);font-style:normal}
+.tnotei p{padding:0 0 10px;font-size:15px;line-height:1.7}
+.tnotei .tmore{margin:0 0 12px;min-height:30px;font-size:12.5px}
+.tgo{display:flex;width:100%;margin-top:16px}
+.tgrid{margin-top:10px;padding:10px 12px 12px;background:var(--card);border:1px solid var(--line);border-radius:14px}
+.tgrid h3{margin:0;font:700 14px var(--serif);letter-spacing:1px;color:var(--muted)}
+.tgrid>div{display:grid;grid-template-columns:repeat(auto-fill,minmax(74px,1fr));gap:6px;margin-top:8px}
+.tic{display:flex;flex-direction:column;align-items:center;gap:4px;min-height:0;padding:8px 2px 7px;border:1px solid var(--line);border-radius:8px;background:#fffaf0;font:500 12px/1.3 var(--sans);color:var(--ink)}
+.tic .tim{height:46px;width:auto;max-width:70px}
+.tsheet{position:fixed;inset:0;z-index:60}
+.tsheet.hidden{display:none}
+.tsbg{position:absolute;inset:0;background:rgba(20,16,10,.45)}
+.tsbox{position:absolute;left:0;right:0;bottom:0;max-width:520px;margin:0 auto;padding:16px 16px calc(env(safe-area-inset-bottom) + 16px);border-radius:14px 14px 0 0;background:var(--paper);border-top:3px solid var(--gold);box-shadow:0 -8px 24px rgba(0,0,0,.25);animation:tsup .2s ease-out}
+@keyframes tsup{from{transform:translateY(30px);opacity:.4}}
+.tshd{display:flex;align-items:center;gap:12px}
+.tshd b{flex:1;font:700 20px var(--serif);letter-spacing:2px;color:var(--ink)}
+.tim.big{height:76px;width:auto;max-width:130px;flex:none}
+.tsx{width:36px;height:36px;min-height:0;padding:0;border:0;border-radius:50%;background:rgba(90,74,56,.12);font-size:20px;color:var(--muted)}
+.tsbox p{margin-top:10px;font:500 15px/1.7 var(--sans);color:var(--ink)}
+.tsbox p em{display:block;font:600 12px var(--sans);font-style:normal;color:var(--wood);letter-spacing:1px}
+.tsask{width:100%;margin-top:14px}
+/* landing: entry to the teach page */
+.teachgo{display:flex;align-items:center;gap:12px;padding:12px 14px;text-decoration:none;color:var(--ink);border-color:rgba(138,90,52,.45);background:linear-gradient(180deg,#fff8e6,#f6e8c6)}
+.teachgo .tg-i{flex:none;display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--wood);color:#fff3d6;font:700 19px var(--serif);box-shadow:inset 0 0 0 2px var(--gold2)}
+.teachgo b{display:block;font:700 16px var(--serif);letter-spacing:1px;color:var(--wood)}
+.teachgo>span:nth-child(2){flex:1;font:500 12.5px/1.5 var(--sans);color:var(--muted)}
+.teachgo>i{font:600 22px var(--sans);font-style:normal;color:var(--wood)}

@@ -12,6 +12,8 @@
 - `tools/讲解稿.md`、`tools/faq.json`：9节教程、24条FAQ。`public/guide.*` 支持关键词别名、版本和卡号过滤；`public/solo.html` 为官方单人准备/结算及明确标注的社区ARNO外链。
 - `src/chat.js`、`src/sse.js`、`public/chat.js`：先依据上述两份本站资料回答；Flash → Qwen → Pro，每级9秒开始/停顿8秒切换；读取匹兹堡KV，不建cron、不显示模型名。
 - 联网查找（2026-11-12，照匹兹堡试点移植）：本站资料没有答案的方舟规则问题，模型只回一行「【需联网】+英文搜索词」（以 Ark Nova 开头，涉及具体卡牌带英文名或编号，海洋世界带 Marine Worlds），服务器调 DeepSeek 搜索接口（`/v1/tools/search`，先只搜 BGG，不足3条再搜全网，最多6条），再让模型只依据摘要作答、用 [1] [2] 标出处，并指出每个说法属于基础、新版计分、旧版计分还是海洋世界。页面在这类回答上方固定显示「本站资料没有这一条，以下来自网上讨论，本站未核对」，下面列来源链接；搜不到或搜索失败就明说，不编。无关问题不联网。服务器只按整行转发模型输出，模型先解释再要求联网时也能接住。每次联网在日志记一条 `chat web search`，核对后补进常见问题。
+- `public/teach.html`、`teach.js`（2026-11-13）：「6 分钟讲规则」，首页「创建新房间」下面有入口。讲稿8段（怎么赢、你面前有什么、一回合挑一张行动卡、建造和动物、卡牌/协会/赞助商、保护项目、休息、结束和计分），只玩基础约1530字、带海洋世界约1700字；顶部切换「只玩基础 / 带海洋世界」，每台手机记在 localStorage，默认基础。计分按新版讲，旧版放在注意事项里。注意事项基础20条、海洋世界再加7条，每条写好答案、默认收起，「问」按钮的问题都在本站常见问题里有答案，通过 `public/chat.js` 的 `window.askRules` 交给规则助手。术语点开看图和注释，末尾有图标速查。
+- `public/img/teach/`：47张图，截自 Capstone Games 英文版官方规则书（基础版、海洋世界），共约280 KB，页脚署名并链接原文，见 `docs/素材来源.md`。
 - `public/img/ark-nova.jpg`：总入口591×720英文官方封面，逐字节复制，无放大或重绘。`nature.jpg` 与 `avatar.png` 为Codex内置图片工具原创，见 `docs/素材来源.md`。
 - `public/_headers`：图片7天、vendor一年。`wrangler.jsonc` Worker暂名 `ark-nova-helper`、namespace `1091`、原KV绑定、observability，route 为 `ark.leisurecat.cloud`（custom domain），无 cron。
 
@@ -26,7 +28,9 @@ node tests/run.mjs
 rm node_modules
 ```
 
-`tests/run.mjs` 串行执行9个测试文件，写入 `tests/测试结果.md`。
+`tests/run.mjs` 串行执行10个测试文件，写入 `tests/测试结果.md`。
+
+讲规则页的测试 `tests/test_teach.mjs` 拦截 `/api/chat` 和评价接口、不写任何数据，可以直接对线上跑：`node tests/test_teach.mjs https://ark.leisurecat.cloud/ <截图目录>`。查入口、两种模式的字数和注意事项条数、47个术语都能打开图和注释、每个「问」的问题都在常见问题里、图标速查的图都能加载、375px 宽不横向滚动、海洋世界刷新后记住。
 
 规则助手的模型切换和联网查找另跑（假 DeepSeek 服务在 8790 端口，两条之间隔1分钟以上，避开每分钟8问的限流）：
 
