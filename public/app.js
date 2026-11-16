@@ -85,6 +85,7 @@ function landing(){
    <button class="linkish" data-act="quick">熟手：跳过准备，直接计分 ›</button>
   </div>
   <a class="card teachgo" href="/teach"><span class="tg-i">讲</span><span><b>第一次玩？6 分钟讲规则</b>照着念就能开局，不懂的词点一下</span><i>›</i></a>
+  <a class="card teachgo pngo" href="/panel"><span class="tg-i">板</span><span><b>我的面板</b>记钱和行动卡顺序，做行动前看连带效果</span><i>›</i></a>
   <div class="tiles">
    <a class="tile" href="/guide.html"><span class="ico">教</span><span><b>新手教程</b><small>图文 + 常见问题</small></span></a>
    <a class="tile" href="/history.html"><span class="ico">录</span><span><b>往期对局</b><small>战绩与存档</small></span></a>
@@ -102,7 +103,7 @@ function view(){
  if(!S)return `${bar()}<main><p class="empty">${esc(ui.error||'正在进入房间…')}</p></main>`;
  return `${bar()}<div class="subbar"><span>${esc(meta(S.config))}</span><button type="button" class="undo" data-act="undo" ${disabled()} ${S.prev?'':'disabled'}>↶ 撤销</button></div>
  <main>${S.stage==='setup'?setup():play()}
- <nav class="links"><a href="/guide.html${roomLink}">新手教程</a><a href="/guide.html${roomLink}#faq">规则速查</a><a href="/solo.html${roomLink}">官方单人</a><a href="/history.html${roomLink}">往期对局</a></nav></main>`;
+ <nav class="links"><a href="/panel${roomLink}">我的面板</a><a href="/guide.html${roomLink}">新手教程</a><a href="/guide.html${roomLink}#faq">规则速查</a><a href="/solo.html${roomLink}">官方单人</a><a href="/history.html${roomLink}">往期对局</a></nav></main>`;
 }
 function bar(){
  const state=!online?'off':pending?'busy':'on';
@@ -147,7 +148,7 @@ function flow(){
  const toScore=`<div class="cta"><button class="primary wide" data-act="toScore" ${disabled()}>最后的行动做完了，去计分</button></div>`;
  if(S.config.n===1)return `<section class="card"><h2>官方单人</h2><p>${esc(endReminder(S.config))}</p><a class="more" href="/solo.html${roomLink}">单人准备与结束说明 ›</a></section>${toScore}`;
  const items=breakList(S.config),done=items.filter(x=>S.breakChecks[x.id]).length;
- return `<p class="hint">普通行动在桌上进行就好，用到时再打开下面的清单。</p>
+ return `<p class="hint">普通行动在桌上进行就好，用到时再打开下面的清单。想记钱和行动卡顺序，打开<a href="/panel${roomLink}">我的面板</a>。</p>
  <section class="card"><div class="card-head"><h2>休息</h2>${S.breakOpen?`<span class="chip live">进行中 ${done}/${items.length}</span>`:''}</div>
   ${S.breakOpen?`<div id="break-list"><p class="note">按顺序一项项做，全桌都能勾。</p>${checklist(items,'break')}<button class="wide" data-act="break" ${available()}>休息结束，收起</button></div>`
   :`<p class="note">有人触发休息时打开，按顺序核对。</p><button class="wide soft" data-act="break" ${available()}>打开休息清单</button>`}</section>
